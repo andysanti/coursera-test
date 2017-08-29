@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<html ng-app="DIApp">
+<html ng-app="MsgApp">
     <head>
         <meta charset="utf-8">
         <script src="angular.min.js"></script>
         <script src="app.js"></script>
-        <title>Hello Coursera</title>
+        <title>Expressions and Interpolation</title>
+        <style>body{ 
+            font-size: 1.2em;}</style>
     </head>
     <body>
-        <h1>Hello Coursera by Andy,yee </h1>
-        <div ng-controller="DIController">
-            <input type="text" ng-model="name" ng-blur="upper()">
+        <h1>Expressions and Interpolation </h1>
+        <div ng-controller="MsgController">
+            
+            
+            {{name}} has a message for you: <br>
+            {{sayMessage()}}
+            
+            <div>
+                <button ng-click="feedYaakov()">
+                Fedd Yaakov</button>
+                <br>
+                <img ng-src="images/yaakov_{{stateOfBeing}}.png" > 
+            </div>
         </div>
     </body>
     
