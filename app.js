@@ -1,9 +1,12 @@
 (function () {
 'use strict'
 angular.module('MsgApp',[])
+    
+    
 .controller('MsgController',MsgController)
 .filter('loves',LovesFilter)
 .filter('truth',TruthFilter);
+ 
     
     
 MsgController.$inject= ['$scope','lovesFilter'];
